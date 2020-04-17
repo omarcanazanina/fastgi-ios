@@ -1,0 +1,23 @@
+<ion-header no-border>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-buttons>
+        <ion-back-button text="" defaultHref="/"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>Ingresar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+  <ion-input placeholder="Correo electrónico" [(ngModel)]="correo" class="ion-padding" type="text"></ion-input>
+  <ion-input placeholder="Contraseña" [(ngModel)]="password" class="ion-padding" type="text"></ion-input>
+  <ion-button size="large" expand="full" shape="round" (click)="ingresar(correo,password)">
+    Ingresar
+  </ion-button>
+ 
+    
+ 
+</ion-content>
+

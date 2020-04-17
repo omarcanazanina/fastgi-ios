@@ -1,0 +1,61 @@
+<ion-content>
+  <ion-header class="ion-padding">
+    <ion-toolbar>
+      <ion-icon size="large" slot="end" color="primary" name="close-circle-outline" (click)="closeUsuario()"></ion-icon>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card color="success" class="contenedor" (click)="label()">
+    <!-- <ion-label slot="end" class="text" (click)="closeUsuario()">Cancelar</ion-label> -->
+    <h4 class="text" text-center *ngIf="usuario_transferencia != ''">Monto a transferir: {{monto_transferencia}} Bs. a
+      {{name_transferencia}}</h4>
+    <h4 class="text" text-center *ngIf="usuario_conmonto != ''">Se pagara: {{monto_conmonto}} a
+      {{name_conmonto}}</h4>
+    <h4 class="text" text-center *ngIf="usuario_sinmonto != ''">Se pagara: {{monto_sinmonto}} Bs. a
+      {{name_sinmonto}} </h4>
+    <h4 class="text" text-center *ngIf="usuario_pagodeuda != ''">Monto a pagar: {{usu_pagodeuda.monto}} Bs.</h4>
+
+    <div *ngIf="pin == '' && controladorteclado == 1">
+      <ion-item class="pin">
+        PIN: {{pin}} <p class="parpadea"> |</p>
+      </ion-item>
+    </div>
+
+    <div *ngIf="pin != '' && controladorteclado == 1">
+      <ion-item class="pin">
+        PIN: {{pin}} <p class="parpadea"> |</p>
+      </ion-item>
+    </div>
+
+    <div *ngIf="pin != '' && controladorteclado == 0">
+      <ion-item class="pin">
+        PIN: {{pin}}
+      </ion-item>
+    </div>
+
+    <div *ngIf="pin == '' && controladorteclado == 0">
+      <ion-item class="pin">
+        PIN: {{pin}}
+      </ion-item>
+    </div>
+  </ion-card>
+
+  <div class="keyboard" *ngIf="controladorteclado == 1">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="9" class="box">
+          <ion-button color="light" *ngFor="let n of gruponum" (click)="presionar(n)" class="btn">{{n}}
+          </ion-button>
+          <ion-button class="btn-ocultar" (click)="ocultar()">
+            <ion-img src="./assets/icon/teclado.svg" class="imagen"></ion-img>
+          </ion-button>
+        </ion-col>
+        <ion-col size="3" class="box">
+          <ion-button class="btn-borrar" (click)="borrar()">
+            <ion-img src="./assets/icon/retroceso.svg" class="imagen"></ion-img>
+          </ion-button>
+          <ion-button class="btn-ok" (click)="funciones(pin)">OK</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

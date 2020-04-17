@@ -1,0 +1,228 @@
+
+.titulo{
+    color: #C0C0C0;
+}
+.card{
+    width: 80%;
+    float: left;
+    background: #fff                    
+}
+.card1{
+    width: 80%;
+    background-color: #dcf8c6;
+    float: right;
+    top: -10%;
+}
+.letra{
+   font-size: 150%;
+}
+.letras{
+    color:white;
+}
+.letras1{
+    color: black;
+}
+.card2{
+    width: 80%;
+    float:right;
+    background-color: #dcf8c6;
+}
+.card11{
+    width: 80%;
+    float: left;
+    top:-10%;
+}
+
+
+.cards{
+     position: absolute;
+     bottom:5px;
+}
+
+ .mas{
+    position: absolute;
+    left: 80%;
+    top: 60%;
+}
+
+ion-footer{
+    position: absolute !important;
+    bottom:0% !important;
+    background-color: #221F2E;
+}
+
+.col-buttom{
+    border-right: 1px solid rgb(231, 230, 230);
+}
+.contenido-historial{
+    padding-bottom: 150px !important;
+    background: #eaebec !important
+}
+ion-list{
+    background: #eaebec !important
+}
+
+.div-noting{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.prompt_alert .alert-input{
+    size: 30px !important;
+    caret-color: #F58282;
+    font-size: 30px !important;
+    text-align: center
+}
+
+.icono{
+    width: 25px;
+    height:25px;
+}
+
+
+.label{
+    background-color: #282637;
+    height: 40px;
+    border-radius: 30px;
+    border: #631cce 1px solid;
+    width: 100%;
+    color: #8c8c8c;
+}
+
+
+ .botones{
+    width: 30%;
+ }
+ .borrar{
+    height: 46%;
+    width: 100%;
+}
+ .ok{
+     height: 46%;
+     width: 100%;
+     background-color: #631cce;
+ }
+ .imagen{
+     width: 30px;
+ }
+ .imagen1{
+    width: 30%;
+}
+
+ 
+
+.parpadea {
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }  
+
+
+
+  
+ ion-grid{
+    height: 27px ;
+    background: #282637;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    ion-row{
+       margin: 0;
+       padding: 0;
+       ion-col{
+          margin: 0;
+          padding: 0;
+          ion-button{
+             margin: 0;
+             padding: 0;
+          }
+       }
+    }
+  }
+ 
+  .keyboard{
+    // position: relative;
+    // top: 70%;
+    /*=================*/
+    /* Propiedad para tamaño
+    /*=================*/
+    height: 210px;
+    /*=================*/
+    /* Margenes inferior y laterales
+    /*=================*/
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    // background-color: grey;
+ }
+ 
+ .box{
+    // border: 1px solid red;
+    /*=================*/
+    /* Propiedad para tamaño
+    /*=================*/
+    height: 210px;
+ }
+ 
+ 
+ .btn{
+    height: 25%;
+    width: 33%;
+    padding: 2px !important;
+    border-radius: 15px !important;
+ }
+ 
+ .btn-ocultar{
+    height: 25%;
+    padding: 2px !important;
+    width: 33%;
+ }
+ 
+ .btn-borrar{
+    height: 50%;
+    width: 100%;
+    padding: 2px 2px 2px 0px !important
+ }
+ .btn-ok{
+     height: 50%;
+     width: 100%;
+     padding: 2px 2px 2px 0px !important
+ }
+
+ .pleca{
+     background-color: #ffffff;
+     height: 34px;
+     width: 2px;
+ }
+
+ .div{
+     width: 100%;
+     height: 3%;
+     background-color: #282637;
+ }

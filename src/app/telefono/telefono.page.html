@@ -1,0 +1,20 @@
+<ion-header no-border>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-buttons>
+        <ion-back-button text="" defaultHref="/"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>Registrarse ios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content >
+  <ion-input placeholder="Correo electrónico" [(ngModel)]="correo" class="ion-padding" type="text"></ion-input>
+  <ion-input placeholder="Contraseña" [(ngModel)]="contrasena" class="ion-padding" type="text"></ion-input>
+  <ion-input placeholder="Nro telefónico" [(ngModel)]="telefono" class="ion-padding" type="text"></ion-input>
+  <ion-button size="large" expand="full" shape="round" (click)="registro()">
+    Ingresar
+  </ion-button>
+</ion-content>

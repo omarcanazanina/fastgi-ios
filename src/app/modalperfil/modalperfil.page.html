@@ -1,0 +1,21 @@
+<ion-content>
+  <ion-item lines="none">
+    <ion-icon (click)="atras()" name="arrow-back"></ion-icon>
+    <ion-title>Perfil</ion-title>
+    <ion-icon (click)="funciones()" name="create"></ion-icon>
+  </ion-item>
+  
+
+<ion-slides [options]="sliderOpts" >
+  <ion-slide>
+    <div class="swiper-zoom-container"  >
+      <img [src]='image'>
+    </div>
+  </ion-slide>
+
+</ion-slides>
+  
+
+
+
+</ion-content>
